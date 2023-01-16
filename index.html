@@ -10,59 +10,58 @@
 <body>
     <div class = "page-container">
         <div class="header">
-        <h1 class ="main-heading">Image Editor</h1>
-        <div class = "input-form">
-        <input type="text" class ="input-element" placeholder="Paste any image and start editing">
-        <button class="go-btn">Go</button>
+            <h1 class ="main-heading">Image Editor</h1>
+            <div class = "input-form">
+                <input type="text" class ="input-element" placeholder="Paste any image address and start editing">
+                <button class="go-btn">Go</button>
+            </div>
         </div>
-        </div>
+
         <div class="main-container">
             <div class="slider-container">
                 <div class="slider">
                     Grayscale
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input id = "grayscale" type="range" min="0" max="100" value="0" class="slider" id="myRange">
                 </div>
                 <div class="slider">
                     Blur 
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input id = "blr" type="range" min="0" max="10" value="0" class="slider" id="myRange">
                 </div>
                 <div class="slider">
                     Brigthness
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input id = "bright" type="range" min="0" max="200" value="100" class="slider" id="myRange">
                 </div>
                 <div class="slider">
                     Contrast
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input id = "contrast" type="range" min="0" max="200" value="100" class="slider" id="myRange">
                 </div>
                 <div class="slider">
                     Hue
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
-                <div class="slider">
-                    Rotate
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input id = "hue-rotate" type="range" min="0" max="360" value="0" class="slider" id="myRange">
                 </div>
                 <div class="slider">
                     Opacity
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input id = "opacity" type="range" min="0" max="100" value="100" class="slider" id="myRange">
                 </div>
                 <div class="slider">
                     Invert
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input id = "invert" type="range" min="0" max="100" value="0" class="slider" id="myRange">
                 </div>
                 <div class="slider">
                     Saturate
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input id = "saturate" type="range" min="0" max="500" value="100" class="slider" id="myRange">
                 </div>
                 <div class="slider">
                     Sepia
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <input id = "sepia" type="range" min="0" max="100" value="0" class="slider" id="myRange">
                 </div>
                 <button class="reset-btn">Reset</button>
             </div>
             <div class="image-container">
+                <img src="" alt="" id="img">
             </div>
         </div>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
